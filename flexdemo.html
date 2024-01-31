@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the flex container */
+        .flex-container {
+            display: flex; /* Enables flexbox */
+            height: 200px; /* Sets the height of the flex container */
+            background-color: lightgrey; /* Background color of the flex container */
+            flex-direction:nowrap;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        /* CSS for the flex items */
+        .flex-item {
+            width: 100px; /* Width of the flex items */
+            height: 100px; /* Height of the flex items */
+            font-size: 20px; /* Font size of the content */
+            color: white; /* Text color */
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        /* Individual background colors for each flex item */
+        .flex-item:nth-child(1) {background-color: tomato;}
+        .flex-item:nth-child(2) {background-color: dodgerblue;}
+        .flex-item:nth-child(3) {background-color: orange;}
+        .flex-item:nth-child(4) {background-color: mediumseagreen;}
+        .flex-item:nth-child(5) {background-color: rgb(255, 242, 103);}
+        .flex-item:nth-child(6) {background-color: rgb(255, 139, 230);}
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+</div>
+
+<div class="flex-container">
+    <div class="flex-item" style="flex: 3;">
+        <h1>1</h1>
+        <p>This is a paragraph</p>
+    </div>
+    <div class="flex-item" style="flex: 3;">
+        <h1>2</h1>
+        <p>This is another paragraph</p>
+    </div>
+    <div class="flex-item" style="flex: 2;">
+        <h1>3</h1>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+    <div class="flex-item" style="flex: 4;">
+        <h1>4</h1>
+        <p>This is another paragraph</p>
+    </div>
+    <div class="flex-item" style="flex: 3;">
+        <h1>5</h1>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+        <p>This is another paragraph</p>
+    </div>
+    <div class="flex-item" style="flex: 1;">
+        <h1>6</h1>
+        <p>This is another paragraph</p>
+    </div>
+</div>
+
+</body>
+</html>
