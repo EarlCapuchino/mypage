@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox - Flex</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+        .box {
+            min-width: 50px; /* Set a minimum width for smaller boxes */
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            text-align: center;
+        }
+        .box1 { background-color: red; flex: 1; } /* Takes 1 part of the available space */
+        .box2 { background-color: green; flex: 2; } /* Takes 2 parts of the available space */
+        .box3 { background-color: blue; flex: 1; } /* Takes 1 part of the available space */
+        .box4 { background-color: orange; flex: 3; } /* Takes 3 parts of the available space, demonstrating greater flexibility */
+        .box5 { background-color: purple; flex: 1; } /* Takes 1 part of the available space */
+        .box6 { background-color: cyan; flex: 4; } /* Takes 4 parts of the available space, showing the maximum flexibility */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Flex 1</div>
+        <div class="box box2">Flex 2</div>
+        <div class="box box3">Flex 1</div>
+        <div class="box box4">Flex 3</div>
+        <div class="box box5">Flex 1</div>
+        <div class="box box6">Flex 4</div>
+    </div>
+    <p>The size of each box corresponds to its flex value, illustrating how items with a higher flex value take up more space within the container.</p>
+</body>
+</html>

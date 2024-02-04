@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox - Justify-content</title>
+    <style>
+        /* Flex container with justify-content property */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Adjusts spacing between items. Try 'flex-start', 'flex-end', 'center', 'space-around' */
+            background-color: lightgray;
+            padding: 10px;
+            width: 100%; /* Full width for clear spacing representation */
+        }
+        /* Styling for larger, colored boxes */
+        .box {
+            width: 100px;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+        .box1 { background-color: red; }
+        .box2 { background-color: green; }
+        .box3 { background-color: blue; }
+        .box4 { background-color: orange; }
+        .box5 { background-color: purple; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+</html>
